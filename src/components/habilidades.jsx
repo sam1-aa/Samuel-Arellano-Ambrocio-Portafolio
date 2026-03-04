@@ -1,14 +1,14 @@
 
 import '/src/styles/Presentacion.css'
 
-function Proyectos() {
+function Habilidades() {
     return (
-        <section className=' seccion ' id='proyectos'>
+        <section className=' seccion ' id='habilidades'>
             <div className="contenido presentacion proyectos">
-                <span>&gt; Proyectos</span>
+                <span>&gt; Habilidades</span>
             </div>
         </section>
     );
 }
 
-export default Proyectos;
+export default Habilidades;

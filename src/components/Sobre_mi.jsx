@@ -1,14 +1,14 @@
 
 import '/src/styles/Presentacion.css'
 
-function Proyectos() {
+function Sobre_mi() {
     return (
-        <section className=' seccion ' id='proyectos'>
+        <section className=' seccion ' id='sobre'>
             <div className="contenido presentacion proyectos">
-                <span>&gt; Proyectos</span>
+                <span>&gt; sobre mi</span>
             </div>
         </section>
     );
 }
 
-export default Proyectos;
+export default Sobre_mi;

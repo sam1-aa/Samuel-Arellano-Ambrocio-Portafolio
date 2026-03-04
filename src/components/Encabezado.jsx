@@ -7,7 +7,7 @@ function Encabezado() {
     const handleClick = (section) => {
         setActive(section);
     }
-    const link = ['presentacion', 'perfil', 'sobre mi', 'habilidades', 'proyectos', 'contacto'];
+    const link = ['presentacion', 'perfil', 'sobre', 'habilidades', 'proyectos', 'contacto'];
     return (
         <div className="Encabezado ">
             {/* <img src={logo} alt="" /> */}
