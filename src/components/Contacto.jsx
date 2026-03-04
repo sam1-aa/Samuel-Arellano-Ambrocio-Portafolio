@@ -5,7 +5,11 @@ function Contacto() {
     return (
         <section className=' seccion ' id='contacto'>
             <div className="contenido contacto">
-                <h3>&gt; &gt; &gt; Contacto</h3>
+                <div className='area_titulo_fromulario'>
+                    <span>&gt;&gt;&gt;</span>
+                    <h3>Contacto</h3>
+                    <hr />
+                </div>
                 <div>
                     <div >
                         <div className='titulo_formulario'>
@@ -19,7 +23,7 @@ function Contacto() {
                             <input type="email" name="" id="" placeholder='tu email...' />
                             <label htmlFor="">mensaje:</label>
                             <textarea name="" id="" cols="" rows="5" placeholder='tu mensaje...'></textarea>
-                            <button type='submit'>Enviar mensaje (enter)</button>
+                            <button type='submit'>Enviar mensaje [enter]</button>
                         </form>
                     </div>
                     <div>

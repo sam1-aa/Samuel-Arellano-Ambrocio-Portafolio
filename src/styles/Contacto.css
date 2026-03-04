@@ -3,6 +3,26 @@
      font-size: 1rem;
  }
 
+ .area_titulo_fromulario {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    color: var(--pixel-orange);
+    margin-bottom: 2rem;
+ }
+
+ .area_titulo_fromulario>h3 {
+     color: var(--primary);
+     text-shadow: 0 0 10px var(--primary), 0 0 20px var(--primary), 0 0 40px var(--primary);
+ }
+
+ .area_titulo_fromulario>hr {
+    flex-grow: 1;
+     border: none;
+     background-color: var(--border);
+     height: 2px;
+ }
+
  .contacto>div {
      display: flex;
      flex-direction: row;
@@ -19,6 +39,8 @@
 
  .titulo_formulario {
      margin-bottom: 2rem;
+     padding-bottom: 1rem;
+     border-bottom: solid 2px var(--border);
  }
 
  .titulo_formulario {
@@ -32,8 +54,8 @@
      color: var(--muted-foreground);
      content: '';
      background-color: var(--primary);
-     width: 1cm;
-     height: 1cm;
+     width: 1rem;
+     height: 1rem;
  }
 
  .titulo_formulario>span::after {
@@ -76,9 +98,9 @@
      outline: none;
  }
 
- form>textarea {}
 
  form>button {
+    cursor: pointer;
      margin-top: 1rem;
      padding: 1rem;
      border: none;

@@ -4,7 +4,6 @@
 .presentacion {
     align-items: center;
     overflow: hidden;
-    text-transform: uppercase;
     padding: 0 3rem 3rem 3rem;
     color: var(--secondary-foreground);
     text-shadow:

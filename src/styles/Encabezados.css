@@ -9,7 +9,6 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  text-transform: uppercase;
   background-color: color-mix(in oklab, var(--background) 95%, transparent);
   font-size: 0.65rem;
   padding: 0.6rem 0;
@@ -24,7 +23,7 @@
 .Encabezado>h1 {
   font-size: 0.8rem;
   color: var(--primary);
-  filter: drop-shadow(0 0 5px var(--primary)) drop-shadow(0 0 15px var(--primary));
+  text-shadow: 0 0 10px var(--primary), 0 0 20px var(--primary), 0 0 40px var(--primary);
 }
 
 .nav_principal {
