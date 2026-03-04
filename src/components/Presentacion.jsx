@@ -8,7 +8,7 @@ function Presentacion() {
                 <p>Hola, soy</p>
                 <h1>Samuel Arellano</h1>
                 <span>&gt; Ingeniero en Sistemas Computacionales</span>
-                <img src="/src/assets/comenzar.png" alt="?" className='comenzar-btn' onClick={() => { document.querySelector('.perfil').scrollIntoView({ behavior: 'smooth' }) }}
+                <img src="/images/comenzar.png" alt="?" className='comenzar-btn' onClick={() => { document.querySelector('.perfil').scrollIntoView({ behavior: 'smooth' }) }}
                 />
             </div>
         </section>
