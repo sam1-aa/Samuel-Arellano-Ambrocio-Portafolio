@@ -1,0 +1,52 @@
+.presentacion_1{
+    display: flex;
+}
+.presentacion {
+    align-items: center;
+    overflow: hidden;
+    text-transform: uppercase;
+    padding: 0 3rem 3rem 3rem;
+    color: var(--secondary-foreground);
+    text-shadow:
+        0 0 5px var(--foreground),
+        0 0 10px var(--foreground),
+        0 0 20px var(--foreground),
+        0 0 40px var(--foreground);
+}
+
+.presentacion>p {
+    font-size: 1.2rem;
+}
+
+.presentacion>h1 {
+    line-height: 8rem;
+    font-size: 7.5rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    ;
+}
+
+.presentacion>span {
+    font-size: 1.2rem;
+}
+
+.presentacion>span::after {
+    content: '_';
+    animation: cursor_parpadeante 1s steps(1) infinite;
+}
+
+.comenzar-btn {
+    width: 200px;
+    margin-top: 4rem;
+    display: flex;
+    justify-self: end;
+    filter: drop-shadow(0 0 5px var(--primary)) drop-shadow(0 0 15px var(--primary));
+    transition: ease 0.5s;
+}
+
+.comenzar-btn:hover,
+.comenzar-btn:active,
+.comenzar-btn:focus {
+    scale: 1.05;
+    cursor: pointer;
+}

@@ -1,0 +1,87 @@
+ .contacto {
+     text-transform: uppercase;
+     font-size: 1rem;
+ }
+
+ .contacto>div {
+     display: flex;
+     flex-direction: row;
+     gap: 2rem;
+ }
+
+ .contacto>div>div {
+     width: 50%;
+     padding: 2rem;
+     border: solid 4px var(--primary);
+     background-color: var(--card);
+     box-shadow: inset 3px 3px 0px var(--border), 4px 4px 0px var(--border);
+ }
+
+ .titulo_formulario {
+     margin-bottom: 2rem;
+ }
+
+ .titulo_formulario {
+     color: var(--foreground);
+     display: flex;
+     align-items: center;
+     gap: 0.5rem;
+ }
+
+ .titulo_formulario>div {
+     color: var(--muted-foreground);
+     content: '';
+     background-color: var(--primary);
+     width: 1cm;
+     height: 1cm;
+ }
+
+ .titulo_formulario>span::after {
+     color: var(--muted-foreground);
+     content: ' //system mail';
+ }
+
+ .contacto>div>div {
+     width: 50%;
+     height: 35rem;
+ }
+
+ form {
+     display: flex;
+     flex-direction: column;
+ }
+
+
+ form>label {
+     color: var(--chart-3);
+ }
+
+ form>input,
+ form>textarea {
+     background-color: var(--secondary);
+     margin-bottom: 1rem;
+     border: solid 2px var(--border);
+     padding: 1rem;
+     margin: 0.5em 0 1.5rem 0;
+     resize: none;
+     color: var(--foreground);
+ }
+
+ form>input:active,
+ form>input:focus,
+ form>textarea:active,
+ form>textarea:focus {
+     border: solid 2px var(--primary);
+     text-decoration-line: none;
+     outline: none;
+ }
+
+ form>textarea {}
+
+ form>button {
+     margin-top: 1rem;
+     padding: 1rem;
+     border: none;
+     background-color: var(--primary);
+     box-shadow: 3px 3px 0px var(--border);
+ }
