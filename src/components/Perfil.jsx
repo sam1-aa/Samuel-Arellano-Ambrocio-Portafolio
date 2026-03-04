@@ -28,7 +28,7 @@ function Perfil() {
   return (
     <section className='seccion ' id='perfil'>
       <div className="contenido perfil">
-        <img src="/src/assets/Samuel_Arelano_Ambrocio.png" alt="Mi foto" className='imagen sombra_solida' />
+        <img src="/Samuel_Arelano_Ambrocio.png" alt="Mi foto" className='imagen sombra_solida' />
         <div className='estadisticas_personaje'>
 
           <p className='estadistica1'>Hp</p>
