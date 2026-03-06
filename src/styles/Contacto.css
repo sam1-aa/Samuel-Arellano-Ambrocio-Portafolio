@@ -3,39 +3,52 @@
      font-size: 1rem;
  }
 
- .area_titulo_fromulario {
-    display: flex;
-    align-items: center;
-    gap: 100px;
-    color: var(--pixel-orange);
-    margin-bottom: 2rem;
+ .area_titulo_tarjeta {
+     display: flex;
+     align-items: center;
+     gap: 2rem;
+     margin-bottom: 2rem;
  }
 
- .area_titulo_fromulario>h3 {
+ .pixel-orange {
+     color: var(--pixel-orange);
+ }
+
+ .pixel-red {
+     color: var(--pixel-red);
+ }
+
+ .area_titulo_tarjeta>h3 {
      color: var(--primary);
      text-shadow: 0 0 10px var(--primary), 0 0 20px var(--primary), 0 0 40px var(--primary);
  }
 
- .area_titulo_fromulario>hr {
-    flex-grow: 1;
+ .area_titulo_tarjeta>hr {
+     flex-grow: 1;
      border: none;
      background-color: var(--border);
      height: 2px;
  }
 
- .contacto>div {
+ .contacto>div>div {
+     width: 50%;
+ }
+
+ .contenedor {
      display: flex;
      flex-direction: row;
      gap: 2rem;
+
  }
 
- .contacto>div>div {
-     width: 50%;
+ .subcontenedor {
      padding: 2rem;
      border: solid 4px var(--primary);
      background-color: var(--card);
      box-shadow: inset 3px 3px 0px var(--border), 4px 4px 0px var(--border);
+     margin-bottom: 2rem;
  }
+
 
  .titulo_formulario {
      margin-bottom: 2rem;
@@ -50,22 +63,29 @@
      gap: 0.5rem;
  }
 
- .titulo_formulario>div {
+ .pixel_form {
      color: var(--muted-foreground);
      content: '';
-     background-color: var(--primary);
      width: 1rem;
      height: 1rem;
  }
 
- .titulo_formulario>span::after {
+ .pixel_color_primary {
+     background-color: var(--primary);
+ }
+
+ .pixel_color_orange {
+     background-color: var(--pixel-orange);
+ }
+
+ .mensaje::after {
      color: var(--muted-foreground);
      content: ' //system mail';
  }
 
- .contacto>div>div {
-     width: 50%;
-     height: 35rem;
+ .info::after {
+     color: var(--muted-foreground);
+     content: ' //info';
  }
 
  form {
@@ -100,10 +120,85 @@
 
 
  form>button {
-    cursor: pointer;
+     cursor: pointer;
      margin-top: 1rem;
      padding: 1rem;
      border: none;
      background-color: var(--primary);
      box-shadow: 3px 3px 0px var(--border);
+ }
+
+ .info_item {
+     display: grid;
+     grid-template-columns: auto 1fr;
+     gap: 1rem;
+     border: solid 2px var(--border);
+     padding: 1rem;
+     cursor: pointer;
+     margin-bottom: 1rem;
+     transition: all 0.3s ease-out;
+     background-color: var(--secondary);
+ }
+
+ .info_item:hover,
+ .info_item:focus,
+ .info_item:active {
+     border: solid 2px var(--primary);
+     background-color: var(--secondary);
+ }
+
+ .info_item>span {
+     color: var(--primary);
+ }
+
+ .info_item>div {
+     display: grid;
+     grid-template-rows: auto 1fr;
+     color: var(--muted-foreground);
+ }
+
+ .info_item>div>p {
+     margin: 0;
+ }
+
+ .info_item>div>p:nth-child(1) {
+     margin-bottom: 1rem;
+ }
+
+ .info_item:nth-of-type(2) p:nth-of-type(2),
+ .info_item:nth-of-type(4) p:nth-of-type(2),
+ .info_item:nth-of-type(5) p:nth-of-type(2) {
+     text-transform: lowercase;
+ }
+
+ .color_cyan {
+     color: var(--pixel-cyan);
+ }
+
+ .color_orange {
+     color: var(--pixel-orange);
+ }
+
+
+
+ .logro_final {
+     background-color: var(--card);
+     border: solid var(--pixel-orange);
+     box-shadow: inset 3px 3px 0px var(--border), 4px 4px 0px var(--border);
+     padding: 1rem;
+ }
+
+ .logro_final>h3 {
+     font-size: 0.8rem;
+     color: var(--pixel-yellow);
+ }
+
+ .logro_final>h4 {
+     font-size: 0.6rem;
+     color: var(--foreground);
+ }
+
+ .logro_final>h5 {
+     font-size: 0.5rem;
+     color: var(--muted-foreground);
  }
