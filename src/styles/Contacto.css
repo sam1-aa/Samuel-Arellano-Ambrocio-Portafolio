@@ -1,6 +1,5 @@
  .contacto {
      text-transform: uppercase;
-     font-size: 1rem;
  }
 
  .area_titulo_tarjeta {
@@ -10,20 +9,17 @@
      margin-bottom: 2rem;
  }
 
- .pixel-orange {
-     color: var(--pixel-orange);
+ .area_titulo_tarjeta>* {
+     font-size: 1.2rem;
  }
 
- .pixel-red {
-     color: var(--pixel-red);
- }
 
  .area_titulo_tarjeta>h3 {
      color: var(--primary);
      text-shadow: 0 0 10px var(--primary), 0 0 20px var(--primary), 0 0 40px var(--primary);
  }
 
- .area_titulo_tarjeta>hr {
+ hr {
      flex-grow: 1;
      border: none;
      background-color: var(--border);
@@ -68,14 +64,6 @@
      content: '';
      width: 1rem;
      height: 1rem;
- }
-
- .pixel_color_primary {
-     background-color: var(--primary);
- }
-
- .pixel_color_orange {
-     background-color: var(--pixel-orange);
  }
 
  .mensaje::after {
@@ -171,34 +159,25 @@
      text-transform: lowercase;
  }
 
- .color_cyan {
-     color: var(--pixel-cyan);
- }
-
- .color_orange {
-     color: var(--pixel-orange);
- }
-
 
 
  .logro_final {
-     background-color: var(--card);
-     border: solid var(--pixel-orange);
-     box-shadow: inset 3px 3px 0px var(--border), 4px 4px 0px var(--border);
      padding: 1rem;
  }
 
  .logro_final>h3 {
-     font-size: 0.8rem;
      color: var(--pixel-yellow);
  }
 
  .logro_final>h4 {
+     padding-left: 3rem;
+     padding-bottom: 1rem;
      font-size: 0.6rem;
      color: var(--foreground);
  }
 
  .logro_final>h5 {
+     padding-left: 3rem;
      font-size: 0.5rem;
      color: var(--muted-foreground);
  }

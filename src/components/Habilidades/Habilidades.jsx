@@ -1,6 +1,4 @@
-
 import '/src/styles/Presentacion.css'
-
 function Habilidades() {
     return (
         <section className=' seccion ' id='habilidades'>

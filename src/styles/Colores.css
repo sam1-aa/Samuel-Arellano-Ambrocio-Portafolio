@@ -1,0 +1,36 @@
+.color_cyan {
+    color: var(--pixel-cyan);
+}
+
+.color_yellow {
+    color: var(--pixel-yellow);
+}
+
+.color_orange {
+    color: var(--pixel-orange);
+}
+
+.color_red {
+    color: var(--pixel-red);
+}
+
+
+
+
+.border_orange {
+    border: solid 4px var(--pixel-orange);
+}
+
+
+
+.fondo_primary {
+    background-color: var(--primary);
+}
+
+.fondo_orange {
+    background-color: var(--pixel-orange);
+}
+
+.fondo_yellow {
+    background-color: var(--pixel-yellow);
+}

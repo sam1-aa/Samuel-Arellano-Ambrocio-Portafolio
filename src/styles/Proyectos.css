@@ -1,0 +1,45 @@
+.proyectos{
+    font-size: 0.7rem;
+}
+
+.proyectos ul,
+.proyectos li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.proyectos li a:active,
+.proyectos li a:focus,
+.proyectos li a:hover {
+    color: var(--card-foreground);
+    background-color: var(--secondary);
+}
+
+.proyectos li a {
+    width: 220px;
+    padding: 1rem;
+    margin-bottom: 0.5rem;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.proyecto_activo {
+    color: var(--card);
+    background-color: var(--primary);
+    pointer-events: none;
+}
+
+.proyecto_inactivo {
+    background-color: transparent;
+    color: var(--muted-foreground);
+    cursor: pointer;
+}
+
+.proyecto_icono_activo::before {
+  content: '>';
+  color: var(--card);
+  margin-right: 0.5rem;
+}

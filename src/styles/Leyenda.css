@@ -1,0 +1,6 @@
+.leyenda hr{
+    margin-bottom: 2rem;
+}
+.leyenda span:nth-of-type(1){
+    color: var(--muted-foreground);
+}

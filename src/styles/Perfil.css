@@ -10,7 +10,7 @@
     border: solid 6px var(--primary);
     background-color: var(--secondary);
     margin-bottom: 2rem;
-    animation: elevar infinite steps(10) 1s alternate-reverse;
+    animation: elevar infinite ease-in-out 1.5s alternate-reverse;
 }
 
 @keyframes elevar {
@@ -19,20 +19,18 @@
     }
 }
 
-.perfil>.estadisticas_personaje {
+.estadisticas_personaje {
+    width: 100%;
     display: grid;
     grid-template-columns: auto 1fr auto;
-    grid-template-rows: repeat(2, auto);
     align-items: center;
-    font-size: 0.6rem;
-    gap: 10px;
 }
 
 .estadisticas_personaje>.barra {
-    width: 10rem;
     color: transparent;
     border: solid 1px var(--muted-foreground);
     overflow: hidden;
+    margin: 0 0.5rem;
 }
 
 .estadistica1 {
@@ -42,6 +40,7 @@
 .barra1 {
     background-color: var(--pixel-red);
 }
+
 .estadistica2 {
     color: var(--pixel-cyan);
 }
@@ -49,6 +48,7 @@
 .barra2 {
     background-color: var(--pixel-cyan);
 }
+
 .estadistica3 {
     color: var(--pixel-yellow);
 }
@@ -80,9 +80,8 @@
 }
 
 .perfil_acciones>a {
-    margin: 1em;
+    margin: 0 1em;
     padding: 1em;
-    font-size: 0.7rem;
 }
 
 .perfil_acciones>a:nth-child(1) {
@@ -127,7 +126,6 @@
     font-size: 1rem;
     animation: cursor_parpadeante 1s steps(1) infinite;
 }
-
 
 .sombra_solida {
     box-shadow: 4px 4px 0px 0px var(--border), inset 2px 2px 0px 0px #ffffff1a;

@@ -3,9 +3,9 @@ import '/src/styles/Encabezados.css'
 import logo from '/src/assets/logo.png';
 import { useState } from 'react';
 function Encabezado() {
-    const [active, setActive] = useState('presentacion');
+    const [active, setActiveP] = useState('presentacion');
     const handleClick = (section) => {
-        setActive(section);
+        setActiveP(section);
     }
     const link = ['presentacion', 'perfil', 'sobre', 'habilidades', 'proyectos', 'contacto'];
     return (
