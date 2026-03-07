@@ -9,7 +9,7 @@ function Encabezado() {
     }
     const link = ['presentacion', 'perfil', 'sobre', 'habilidades', 'proyectos', 'contacto'];
     return (
-        <div className="Encabezado ">
+        <div className="Encabezado " id='Nav'>
             {/* <img src={logo} alt="" /> */}
             <h1>&lt;SAA/&gt;</h1>
             <nav className='nav_principal'>

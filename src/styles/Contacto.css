@@ -13,7 +13,6 @@
      font-size: 1.2rem;
  }
 
-
  .area_titulo_tarjeta>h3 {
      color: var(--primary);
      text-shadow: 0 0 10px var(--primary), 0 0 20px var(--primary), 0 0 40px var(--primary);
@@ -44,7 +43,6 @@
      box-shadow: inset 3px 3px 0px var(--border), 4px 4px 0px var(--border);
      margin-bottom: 2rem;
  }
-
 
  .titulo_formulario {
      margin-bottom: 2rem;
@@ -94,7 +92,7 @@
      padding: 1rem;
      margin: 0.5em 0 1.5rem 0;
      resize: none;
-     color: var(--foreground);
+     color: var(--secondary-foreground);
  }
 
  form>input:active,
@@ -106,7 +104,6 @@
      outline: none;
  }
 
-
  form>button {
      cursor: pointer;
      margin-top: 1rem;
@@ -116,14 +113,19 @@
      box-shadow: 3px 3px 0px var(--border);
  }
 
+ .items {
+     display: grid;
+     grid-template-columns: 1fr;
+     gap: 1rem;
+ }
+
  .info_item {
      display: grid;
      grid-template-columns: auto 1fr;
      gap: 1rem;
      border: solid 2px var(--border);
-     padding: 1rem;
+     padding: 0.5rem;
      cursor: pointer;
-     margin-bottom: 1rem;
      transition: all 0.3s ease-out;
      background-color: var(--secondary);
  }
@@ -139,6 +141,10 @@
      color: var(--primary);
  }
 
+ .info_item>div * {
+     font-size: 0.7rem;
+ }
+
  .info_item>div {
      display: grid;
      grid-template-rows: auto 1fr;
@@ -150,7 +156,7 @@
  }
 
  .info_item>div>p:nth-child(1) {
-     margin-bottom: 1rem;
+     margin-bottom: 0.5rem;
  }
 
  .info_item:nth-of-type(2) p:nth-of-type(2),

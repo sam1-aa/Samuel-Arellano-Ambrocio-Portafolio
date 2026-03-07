@@ -1,32 +1,28 @@
-.presentacion_1{
-    display: flex;
-}
 .presentacion {
-    align-items: center;
-    overflow: hidden;
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    justify-items: center;
     padding: 0 3rem 3rem 3rem;
-    color: var(--secondary-foreground);
-    text-shadow:
-        0 0 5px var(--foreground),
-        0 0 10px var(--foreground),
-        0 0 20px var(--foreground),
-        0 0 40px var(--foreground);
 }
 
 .presentacion>p {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
+    color: var(--secondary-foreground);
 }
 
 .presentacion>h1 {
-    line-height: 8rem;
-    font-size: 7.5rem;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    ;
+    text-align: center;
+    font-size: 5rem;
+    word-spacing: -3rem;
+    margin-top: 1rem;
+    color: var(--primary);
+    /* filter: drop-shadow(0 0 5px var(--primary)) drop-shadow(0 0 15px var(--primary)); */
 }
 
 .presentacion>span {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
+     color: var(--secondary-foreground);
+     margin-bottom: 2rem;
 }
 
 .presentacion>span::after {
@@ -37,9 +33,7 @@
 .comenzar-btn {
     width: 200px;
     margin-top: 4rem;
-    display: flex;
-    justify-self: end;
-    filter: drop-shadow(0 0 5px var(--primary)) drop-shadow(0 0 15px var(--primary));
+    /* filter: drop-shadow(0 0 5px var(--secondary-foreground)) drop-shadow(0 0 15px var(--secondary-foreground)); */
     transition: ease 0.5s;
 }
 
