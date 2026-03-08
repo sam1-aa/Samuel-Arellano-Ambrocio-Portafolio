@@ -65,6 +65,7 @@
         0 0 10px var(--pixel-green),
         0 0 20px var(--pixel-green),
         0 0 40px var(--pixel-green);
+        margin-bottom: 1rem;
 }
 
 .perfil>p {
@@ -72,11 +73,28 @@
     color: var(--muted-foreground);
 }
 
+.perfil>.titulacion {
+    font-size: 0.8rem;
+    color: var(--pixel-cyan);
+    text-shadow:
+        0 0 5px var(--pixel-cyan),
+        0 0 10px var(--pixel-cyan),
+        0 0 20px var(--pixel-cyan),
+        0 0 40px var(--pixel-cyan);
+
+}
+
+
+.perfil>.titulacion::after {
+    content: '_';
+    animation: cursor_parpadeante 1s steps(1) infinite;
+}
+
 .perfil_acciones {
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-top: 2rem;
+    margin-top: 1rem;
 }
 
 .perfil_acciones>a {

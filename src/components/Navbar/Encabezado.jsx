@@ -2,14 +2,13 @@
 import '/src/styles/Encabezados.css'
 import { useState } from 'react';
 function Encabezado() {
-    const [active, setActiveP] = useState('perfil');
+    const [active, setActive] = useState('perfil');
     const handleClick = (section) => {
-        setActiveP(section);
+        setActive(section);
     }
     const link = ['perfil', 'sobre', 'habilidades', 'proyectos', 'contacto'];
     return (
         <div className="Encabezado ">
-            {/* <img src={logo} alt="" /> */}
             <h1>&lt;SAA/&gt;</h1>
             <nav className='nav_principal'>
                 <ul>

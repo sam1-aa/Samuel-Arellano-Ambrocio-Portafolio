@@ -5,7 +5,7 @@
 
 .logo {
     width: 250px;
-    animation: cargarVertical 5s ease forwards;
+    animation: cargarVertical 4s ease forwards;
     cursor: pointer;
     scale: 0.7;
 }
@@ -14,7 +14,7 @@
     max-width: 150px;
     cursor: pointer;
     animation:
-        cargarVertical 2s ease forwards,
+        cargarVertical 1s ease forwards,
         pulso 5s ease-in-out infinite 1.2s;
     pointer-events: all;
 }

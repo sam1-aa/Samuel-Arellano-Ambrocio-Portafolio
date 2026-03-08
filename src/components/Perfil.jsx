@@ -13,16 +13,16 @@ function Perfil() {
   const [barra3, setBarra3] = useState(0);
 
   useEffect(() => {
-    
+
     setTimeout(() => {
-    setBarra1((v_b1 * 100) / total)
-    setBarra2((v_b2 * 100) / total)
-    setBarra3((v_b3 * 100) / total)
-  }, 1000);
-      
-      setResultado_1(`${v_b1}/${total}`)
-      setResultado_2(`${v_b2}/${total}`)
-      setResultado_3(`${v_b3*10}/${total*10}`)
+      setBarra1((v_b1 * 100) / total)
+      setBarra2((v_b2 * 100) / total)
+      setBarra3((v_b3 * 100) / total)
+    }, 1000);
+
+    setResultado_1(`${v_b1}/${total}`)
+    setResultado_2(`${v_b2}/${total}`)
+    setResultado_3(`${v_b3 * 10}/${total * 10}`)
   })
 
   return (
@@ -52,7 +52,8 @@ function Perfil() {
 
         </div>
         <h2 className='nombre'>Samuel Arellano</h2>
-        <p>lvl 25 // class: Desarrollador</p>
+        <p >lvl 25 // class: Desarrollador</p>
+        <h3 className='titulacion'>Ingeniero en sistemas computacionales</h3>
         <div className='perfil_acciones'>
           <a className='sombra_solida' onClick={() => { document.querySelector('.proyectos').scrollIntoView({ behavior: 'smooth' }) }}>Ver proyectos</a>
           <a className='sombra_solida' onClick={() => { document.querySelector('.contacto').scrollIntoView({ behavior: 'smooth' }) }}>Contacto</a>

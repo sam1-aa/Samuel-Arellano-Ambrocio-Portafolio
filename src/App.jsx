@@ -20,15 +20,14 @@ function App() {
 
       {!start && (
         <div className="intro">
-         
-            <Presentacion onClick={() => setStart(true)}></Presentacion>
+         <Presentacion onClick={()=>{setStart(true)}}/>
         </div>
       )}
 
       {start && (
         <div className="main fadeIn">
           <div className="plantilla ">
-          <Encabezado />
+            <Encabezado />
             <Perfil />
             <Sobre_mi />
             <Habilidades />
@@ -37,6 +36,7 @@ function App() {
           </div>
         </div>
       )}
+
     </div>
   );
 }

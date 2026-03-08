@@ -50,16 +50,6 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #0f172a;
-}
-
-.startBtn {
-  padding: 15px 40px;
-  font-size: 20px;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  background: white;
 }
 
 .main {
@@ -67,6 +57,10 @@ html {
 }
 
 .fadeIn {
+  animation: fadeIn 2s ease;
+}
+
+@keyframes fadeIn {
   from {
     opacity: 0;
     transform: translateY(-20px);
