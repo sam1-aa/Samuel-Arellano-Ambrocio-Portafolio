@@ -6,28 +6,17 @@ body {
   background-size: 16px 16px;
   background-color: #0a0a1a;
   width: 100%;
-  height: 100vh;
-  overflow: hidden;
+  /* height: 100vh; */
+  /* overflow: hidden; */
+  margin: 0;
 }
 
-body::after {
-  content: '';
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: repeating-linear-gradient(0deg,
-      rgba(0, 0, 0, 0.15) 0px,
-      rgba(0, 0, 0, 0.15) 1px,
-      transparent 1px,
-      transparent 3px);
-  pointer-events: none;
-  z-index: 9999;
-}
-html, body {
-  touch-action: manipulation; /* limita gestos táctiles */
-  overscroll-behavior: none;  /* evita zoom por scroll */
+html,
+body {
+  touch-action: manipulation;
+  /* limita gestos táctiles */
+  overscroll-behavior: none;
+  /* evita zoom por scroll */
 }
 
 /* 
@@ -38,9 +27,9 @@ html, body {
   transform: translate(-50%, -50%);
 } */
 
-.plantilla{
+/* .plantilla {
   width: 100%;
-}
+} */
 
 html {
   scroll-snap-type: y mandatory;
@@ -48,4 +37,43 @@ html {
 
 .seccion {
   scroll-snap-align: start;
+}
+
+
+.app {
+  width: 100%;
+  height: 100vh;
+}
+
+.intro {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #0f172a;
+}
+
+.startBtn {
+  padding: 15px 40px;
+  font-size: 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background: white;
+}
+
+.main {
+  height: 100vh;
+}
+
+.fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
 }

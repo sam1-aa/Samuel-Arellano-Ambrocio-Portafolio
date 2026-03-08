@@ -1,45 +1,53 @@
 .presentacion {
     display: grid;
-    grid-template-columns: repeat(1, auto);
     justify-items: center;
-    padding: 0 3rem 3rem 3rem;
 }
 
-.presentacion>p {
-    font-size: 1.5rem;
-    color: var(--secondary-foreground);
-}
-
-.presentacion>h1 {
-    text-align: center;
-    font-size: 5rem;
-    word-spacing: -3rem;
-    margin-top: 1rem;
-    color: var(--primary);
-    /* filter: drop-shadow(0 0 5px var(--primary)) drop-shadow(0 0 15px var(--primary)); */
-}
-
-.presentacion>span {
-    font-size: 1.5rem;
-     color: var(--secondary-foreground);
-     margin-bottom: 2rem;
-}
-
-.presentacion>span::after {
-    content: '_';
-    animation: cursor_parpadeante 1s steps(1) infinite;
-}
-
-.comenzar-btn {
-    width: 200px;
-    margin-top: 4rem;
-    /* filter: drop-shadow(0 0 5px var(--secondary-foreground)) drop-shadow(0 0 15px var(--secondary-foreground)); */
-    transition: ease 0.5s;
-}
-
-.comenzar-btn:hover,
-.comenzar-btn:active,
-.comenzar-btn:focus {
-    scale: 1.05;
+.logo {
+    width: 250px;
+    animation: cargarVertical 5s ease forwards;
     cursor: pointer;
+    scale: 0.7;
+}
+
+.continuar {
+    max-width: 150px;
+    cursor: pointer;
+    animation:
+        cargarVertical 2s ease forwards,
+        pulso 5s ease-in-out infinite 1.2s;
+    pointer-events: all;
+}
+
+.espera {
+    pointer-events: none;
+    opacity: 0;
+    max-width: 150px;
+}
+
+@keyframes cargarVertical {
+    0% {
+        clip-path: inset(0 0 100% 0);
+        opacity: 0;
+    }
+
+    100% {
+        clip-path: inset(0 0 0 0);
+        opacity: 1;
+    }
+}
+
+/* Pulso infinito */
+@keyframes pulso {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.05);
+    }
+
+    100% {
+        transform: scale(1);
+    }
 }

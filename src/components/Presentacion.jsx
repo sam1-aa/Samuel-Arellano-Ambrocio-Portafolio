@@ -1,33 +1,19 @@
 
+import { useState } from 'react';
 import '/src/styles/Presentacion.css'
 
-function Presentacion() {
+function Presentacion({ onClick }) {
+    const [comenzar, setComenzar] = useState(false)
+    setTimeout(() => {
+        setComenzar(true);
+    }, 3000);
     return (
-        <section className=' seccion' id='presentacion'>
+        <section className='seccion '>
             <div className="contenido presentacion">
-                <p>Hola, soy</p>
-                <h1>Samuel Arellano Ambrocio</h1>
-                <span>&gt; Ingeniero en Sistemas Computacionales</span>
-                <img src="/images/comenzar.png" alt="?" className='comenzar-btn'
-                    onClick={() => {
-                       
-                        setTimeout(() => {
-                         document.body.style.overflow = "scroll";
-                        document.getElementById('Nav')
-                        .style.top= '0';
-                        document.getElementById('Nav')
-                        .style.opacity= '1';
-                        document.getElementById('Nav')
-                        .style.pointerEvents= 'all';
-                        }, 1000);
-                        setTimeout(() => {
-                            document.getElementById('presentacion')
-                            .style.display= 'none';
-                            document.querySelector('.perfil')
-                            .scrollIntoView({ behavior: 'smooth' })
-                        }, 200);
-                    }}
-                />
+                <img className='logo' src="/images/logo.png" alt="Samuel_Arellano_Ambrocio.png"/>
+                <img className={comenzar === true ? 'continuar ' : 'espera'} src="/images/comenzar.png" alt="Samuel_Arellano_Ambrocio.png" onClick={onClick} />
+
+
             </div>
         </section>
     );

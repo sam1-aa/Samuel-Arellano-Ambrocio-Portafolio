@@ -1,35 +1,20 @@
 .Encabezado {
   position: fixed;
-  top: -10rem;
-  opacity: 1;
-  pointer-events: none;
   z-index: 1000;
   border-bottom: solid 4px var(--primary);
-  cursor: pointer;
   width: 100%;
   display: flex;
   justify-content: space-around;
   align-items: center;
   background-color: color-mix(in oklab, var(--background) 95%, transparent);
-  font-size: 0.65rem;
   padding: 1rem 0;
-  transition:  top 1s ease-out;
 }
 
-/* 
-.Encabezado>img {
-  width: 80px;
-  filter: drop-shadow(0 0 5px var(--foreground)) drop-shadow(0 0 15px var(--foreground));
-} */
 
 .Encabezado>h1 {
   font-size: 0.8rem;
   color: var(--primary);
   text-shadow: 0 0 10px var(--primary), 0 0 20px var(--primary), 0 0 40px var(--primary);
-}
-
-.nav_principal {
-  /* background-color: var(--primary); */
 }
 
 .nav_principal>ul {
@@ -39,6 +24,7 @@
 }
 
 .nav_principal>ul>li {
+  cursor: pointer;
   list-style: none;
 }
 

@@ -9,19 +9,36 @@ import './App.css'
 import './styles/Colores.css'
 import './styles/Leyenda.css'
 import './styles/Descripcion.css'
+import { useState } from "react";
+import "./App.css";
 
-function App() { 
+function App() {
+  const [start, setStart] = useState(false);
+
   return (
-    <div className="plantilla ">
-      <Encabezado/>
-      <Presentacion/>
-      <Perfil/>
-      <Sobre_mi/>
-      <Habilidades/>
-      <Proyectos/>
-      <Contacto/>
+    <div className="app">
+
+      {!start && (
+        <div className="intro">
+         
+            <Presentacion onClick={() => setStart(true)}></Presentacion>
+        </div>
+      )}
+
+      {start && (
+        <div className="main fadeIn">
+          <div className="plantilla ">
+          <Encabezado />
+            <Perfil />
+            <Sobre_mi />
+            <Habilidades />
+            <Proyectos />
+            <Contacto />
+          </div>
+        </div>
+      )}
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
