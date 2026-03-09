@@ -28,7 +28,7 @@ function Perfil() {
   return (
     <section className='seccion ' id='perfil'>
       <div className="contenido perfil">
-        <img src="/images/Samuel_Arelano_Ambrocio.png" alt="Mi foto" className='imagen sombra_solida' />
+        <img src="/images/Samuel_Arelano_Ambrocio.png" alt="Mi foto" className='imagen sombra_solida elevar' />
         <div className='estadisticas_personaje'>
 
           <p className='estadistica1'>Hp</p>
@@ -53,14 +53,14 @@ function Perfil() {
         </div>
         <h2 className='nombre'>Samuel Arellano</h2>
         <p >lvl 25 // class: Desarrollador</p>
-        <h3 className='titulacion'>Ingeniero en sistemas computacionales</h3>
+        <h3 className='titulacion'>Ingeniero en sistemas computacionales<span className='cursorActivo cursorParpadeante'></span></h3>
         <div className='perfil_acciones'>
           <a className='sombra_solida' onClick={() => { document.querySelector('.proyectos').scrollIntoView({ behavior: 'smooth' }) }}>Ver proyectos</a>
           <a className='sombra_solida' onClick={() => { document.querySelector('.contacto').scrollIntoView({ behavior: 'smooth' }) }}>Contacto</a>
         </div>
         <div className='perfil_scroll' onClick={() => { document.querySelector('.proyectos').scrollIntoView({ behavior: 'smooth' }) }}>
           <span>Continuar deslizando</span>
-          <span>V</span>
+          <span className='cursorParpadeante '>V</span>
         </div>
       </div>
     </section>

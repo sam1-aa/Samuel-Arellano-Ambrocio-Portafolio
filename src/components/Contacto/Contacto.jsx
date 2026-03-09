@@ -8,7 +8,7 @@ import Logro from '../Informacion/Logro';
 
 function Contacto() {
     return (
-        <section className=' seccion fadeIn' id='contacto'>
+        <section className=' seccion ' id='contacto'>
             <div className="contenido contacto">
                 <Titulo_seccion titulo='Contacto' colorMarcador='color_orange' />
                 <div className='contenedor '>

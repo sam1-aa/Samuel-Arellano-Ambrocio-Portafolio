@@ -10,14 +10,9 @@
     border: solid 6px var(--primary);
     background-color: var(--secondary);
     margin-bottom: 2rem;
-    animation: elevar infinite ease-in-out 1.5s alternate-reverse;
 }
 
-@keyframes elevar {
-    to {
-        transform: translateY(1rem);
-    }
-}
+
 
 .estadisticas_personaje {
     width: 100%;
@@ -84,12 +79,6 @@
 
 }
 
-
-.perfil>.titulacion::after {
-    content: '_';
-    animation: cursor_parpadeante 1s steps(1) infinite;
-}
-
 .perfil_acciones {
     display: flex;
     flex-direction: row;
@@ -144,7 +133,6 @@
     margin-top: 1rem;
     color: var(--primary);
     font-size: 1rem;
-    animation: cursor_parpadeante 1s steps(1) infinite;
 }
 
 .sombra_solida {

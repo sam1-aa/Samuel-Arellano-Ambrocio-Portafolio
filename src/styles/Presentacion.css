@@ -1,53 +1,36 @@
 .presentacion {
-    display: grid;
-    justify-items: center;
+    height: 80%;
+    position: relative;
+    width: 100%;
 }
 
 .logo {
     width: 250px;
     animation: cargarVertical 4s ease forwards;
     cursor: pointer;
-    scale: 0.7;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.instruccion {
+    position: absolute;
+    color: var(--foreground);
+    font-size: 0.9rem;
+    bottom: 0;
+    transform: translateX(-50%);
+    left: 50%;
+    width: 100%;
+    text-align: center;
 }
 
 .continuar {
-    max-width: 150px;
     cursor: pointer;
-    animation:
-        cargarVertical 1s ease forwards,
-        pulso 5s ease-in-out infinite 1.2s;
     pointer-events: all;
 }
 
 .espera {
     pointer-events: none;
     opacity: 0;
-    max-width: 150px;
-}
-
-@keyframes cargarVertical {
-    0% {
-        clip-path: inset(0 0 100% 0);
-        opacity: 0;
-    }
-
-    100% {
-        clip-path: inset(0 0 0 0);
-        opacity: 1;
-    }
-}
-
-/* Pulso infinito */
-@keyframes pulso {
-    0% {
-        transform: scale(1);
-    }
-
-    50% {
-        transform: scale(1.05);
-    }
-
-    100% {
-        transform: scale(1);
-    }
 }

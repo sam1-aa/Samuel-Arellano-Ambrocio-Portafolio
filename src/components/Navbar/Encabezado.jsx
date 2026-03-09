@@ -6,7 +6,7 @@ function Encabezado() {
     const handleClick = (section) => {
         setActive(section);
     }
-    const link = ['perfil', 'sobre', 'habilidades', 'proyectos', 'contacto'];
+    const link = ['perfil', 'sobre-mi', 'habilidades', 'proyectos', 'contacto'];
     return (
         <div className="Encabezado ">
             <h1>&lt;SAA/&gt;</h1>

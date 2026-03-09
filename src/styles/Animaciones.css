@@ -1,0 +1,106 @@
+
+/* animaciones y transiciones */
+.cargaVertical {
+  animation:
+    cargarVertical 1s ease forwards;
+}
+
+.mix {
+  animation:
+    cargarVertical 0.5s ease forwards,
+    desvanecerTexto alternate-reverse infinite 1.5s ease;
+}
+
+@keyframes cargarVertical {
+  0% {
+    clip-path: inset(0 0 100% 0);
+    opacity: 0;
+  }
+
+  100% {
+    clip-path: inset(0 0 0 0);
+    opacity: 1;
+  }
+}
+
+.desvanecer {
+  animation: desvaneceTexto alternate-reverse infinite 2s ease;
+}
+
+@keyframes desvanecerTexto {
+  0% {
+    opacity: 0.1;
+  }
+
+  100% {
+    opacity: 0.7;
+  }
+}
+
+.pulso {
+  animation:
+    pulso 1s ease-in-out infinite 1.2s;
+}
+
+@keyframes pulso {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.05);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+.cursorActivo::after {
+  content: '_';
+
+}
+
+.cursorParpadeante {
+  animation: cursor_parpadeante 1s steps(1) infinite;
+}
+
+@keyframes cursor_parpadeante {
+
+  0%,
+  50% {
+    opacity: 1;
+  }
+
+  50.01%,
+  100% {
+    opacity: 0;
+  }
+}
+
+.fadeIn {
+  animation: fadeIn 2s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+.elevar {
+  animation: elevar infinite ease-in-out 1.5s alternate-reverse;
+}
+
+@keyframes elevar {
+  to {
+    transform: translateY(1rem);
+  }
+}
