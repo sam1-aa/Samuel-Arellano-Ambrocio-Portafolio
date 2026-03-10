@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import '/src/styles/Proyectos.css'
+import '/src/styles/Proyectos/Proyectos.css'
 function Listado({ setProyectoActivo }) {
     const [active, setActive] = useState('Portafolio pixel');
     const handleClick = (section) => {

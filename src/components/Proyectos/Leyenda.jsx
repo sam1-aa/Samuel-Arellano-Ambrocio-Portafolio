@@ -1,9 +1,9 @@
-function Leyenda({ texto, comentario }) {
+function Leyenda({ leyenda, color}) {
     return (
         <div className="leyenda">
             <hr />
-            <span>{texto}</span>
-            <span className="color_yellow"> {comentario}</span>
+            <span>Recompensa: </span>
+            <span className={color}> {leyenda}</span>
         </div>
     );
 }

@@ -1,3 +1,6 @@
+.color_primary {
+    color: var(--primary);
+}
 .color_cyan {
     color: var(--pixel-cyan);
 }
@@ -12,6 +15,10 @@
 
 .color_red {
     color: var(--pixel-red);
+}
+
+.color_muted {
+    color: var(--secondary-foreground);
 }
 
 

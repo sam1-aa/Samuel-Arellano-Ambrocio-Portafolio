@@ -4,6 +4,7 @@ import Titulo_card from '../Titulo_card';
 import Listado from './Listado';
 import Leyenda from './Leyenda';
 import Descripcion from './Descripcion';
+import '/src/styles/Proyectos/Descripcion.css'
 
 function Proyectos() {
     const [proyectoActivo, setProyectoActivo] = useState("Portafolio pixel");
@@ -16,7 +17,7 @@ function Proyectos() {
                     <div className='subcontenedor'>
                         <Titulo_card titulo='Misiones' titulo_after='' pixel_form_color='fondo_yellow' />
                         <Listado setProyectoActivo={setProyectoActivo} />
-                        <Leyenda texto='Misiones: 4/4' comentario='' />
+                        <Leyenda leyenda='Misiones: 4/4' color='color_muted' />
                     </div>
                     <div>
                         <div>
