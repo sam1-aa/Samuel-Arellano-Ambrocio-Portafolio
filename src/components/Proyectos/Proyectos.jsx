@@ -17,7 +17,7 @@ function Proyectos() {
                     <div className='subcontenedor'>
                         <Titulo_card titulo='Misiones' titulo_after='' pixel_form_color='fondo_yellow' />
                         <Listado setProyectoActivo={setProyectoActivo} />
-                        <Leyenda leyenda='Misiones: 4/4' color='color_muted' />
+                        <Leyenda leyenda='4/4' color='color_muted' />
                     </div>
                     <div>
                         <div>
