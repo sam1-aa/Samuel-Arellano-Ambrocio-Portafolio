@@ -13,7 +13,7 @@ function Contacto() {
                 <Titulo_seccion titulo='Contacto' colorMarcador='color_orange' />
                 <div className='contenedor '>
                     <div className='subcontenedor'>
-                        <Titulo_card titulo='Enviar mensaje' titulo_after='mensaje' pixel_form_color='fondo_primary' />
+                        <Titulo_card titulo='Enviar mensaje' titulo_after='// Mail system' pixel_form_color='fondo_primary' />
                         <Form />
                     </div>
                     <div>

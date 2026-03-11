@@ -65,14 +65,8 @@
      height: 1rem;
  }
 
- .mensaje::after {
+ .titulo_after {
      color: var(--muted-foreground);
-     content: ' //system mail';
- }
-
- .info::after {
-     color: var(--muted-foreground);
-     content: ' //info';
  }
 
  form {

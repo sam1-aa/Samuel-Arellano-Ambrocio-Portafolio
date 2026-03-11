@@ -1,0 +1,39 @@
+.sobreMi {
+    line-height: 1rem;
+    font-size: 1rem;
+}
+
+.contexto {
+    color: var(--muted-foreground);
+    margin-bottom: 1.2rem;
+    /* padding: 1rem; */
+    /* border: dashed 2px var(--muted-foreground); */
+}
+
+
+.dialogo1,
+.dialogo1 {
+    margin-bottom: 1.2rem;
+}
+
+.dialogo1_nombre {
+    color: var(--primary);
+
+}
+
+.dialogo1_msje {
+    color: var(--pixel-green);
+}
+
+.dialogo2_nombre {
+    color: var(--foreground);
+
+}
+
+.dialogo2_msje {
+    color: var(--muted-foreground);
+}
+
+.comando{
+    color: var(--pixel-yellow);
+}

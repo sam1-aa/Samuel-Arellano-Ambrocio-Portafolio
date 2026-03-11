@@ -1,6 +1,7 @@
 .color_primary {
     color: var(--primary);
 }
+
 .color_cyan {
     color: var(--pixel-cyan);
 }
@@ -34,10 +35,14 @@
     background-color: var(--primary);
 }
 
+.fondo_yellow {
+    background-color: var(--pixel-yellow);
+}
+
 .fondo_orange {
     background-color: var(--pixel-orange);
 }
 
-.fondo_yellow {
-    background-color: var(--pixel-yellow);
+.fondo_red {
+    background-color: var(--pixel-red);
 }

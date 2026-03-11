@@ -4,6 +4,7 @@ import Titulo_card from '../Titulo_card';
 import Listado from './Listado';
 import Leyenda from './Leyenda';
 import Descripcion from './Descripcion';
+import '/src/styles/Proyectos/Proyectos.css'
 import '/src/styles/Proyectos/Descripcion.css'
 
 function Proyectos() {
