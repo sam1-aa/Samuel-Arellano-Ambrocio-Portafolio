@@ -31,6 +31,10 @@
 
 
 
+.fondo_cyan {
+    background-color: var(--pixel-cyan);
+}
+
 .fondo_primary {
     background-color: var(--primary);
 }

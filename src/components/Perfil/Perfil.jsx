@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import '/src/styles/Perfil.css'
+import { motion } from 'framer-motion';
 function Perfil() {
 
   const total = 999;
@@ -26,7 +27,12 @@ function Perfil() {
   })
 
   return (
-    <section className='seccion ' id='perfil'>
+    <motion.section
+      initial={{ opacity: 0.8 }}
+      whileInView={{ opacity: 1 }}
+      transition={{ duration: 2, repeat: Infinity, repeatType: 'loop' }}
+      viewport={{ once: true }}
+      className='seccion' id='perfil'>
       <div className="contenido perfil">
         <img src="/images/Samuel_Arelano_Ambrocio.png" alt="Mi foto" className='imagen sombra_solida elevar' />
         <div className='estadisticas_personaje'>
@@ -52,18 +58,18 @@ function Perfil() {
 
         </div>
         <h2 className='nombre'>Samuel Arellano</h2>
-        <p >lvl 25 // class: Desarrollador</p>
+        <p >lvl 25 // class: Desarrollador backend</p>
         <h3 className='titulacion'>Ingeniero en sistemas computacionales<span className='cursorActivo cursorParpadeante'></span></h3>
         <div className='perfil_acciones'>
           <a className='sombra_solida' onClick={() => { document.querySelector('.proyectos').scrollIntoView({ behavior: 'smooth' }) }}>Ver proyectos</a>
           <a className='sombra_solida' onClick={() => { document.querySelector('.contacto').scrollIntoView({ behavior: 'smooth' }) }}>Contacto</a>
         </div>
-        <div className='perfil_scroll' onClick={() => { document.querySelector('.proyectos').scrollIntoView({ behavior: 'smooth' }) }}>
+        <div className='perfil_scroll' onClick={() => { document.querySelector('.sobreMi').scrollIntoView({ behavior: 'smooth' }) }}>
           <span>Continuar deslizando</span>
           <span className='cursorParpadeante '>V</span>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 }
 export default Perfil;

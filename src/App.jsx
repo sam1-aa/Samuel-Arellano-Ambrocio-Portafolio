@@ -9,7 +9,6 @@ import '/src/App.css'
 import '/src/styles/Animaciones.css'
 import '/src/styles/Colores.css'
 import '/src/styles/Leyenda.css'
-
 import { useState } from "react";
 import "/src/App.css";
 
@@ -36,7 +35,6 @@ function App() {
 
         </div>
       )}
-
     </>
   );
 }

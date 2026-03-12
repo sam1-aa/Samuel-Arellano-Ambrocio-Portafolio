@@ -1,7 +1,7 @@
 function Comando({ mensaje }) {
     return (
         <>
-            <p className="comando cursorParpadeante">{mensaje}</p>
+            <p className="comando desvanecer">{mensaje}</p>
         </>
     )
 }
