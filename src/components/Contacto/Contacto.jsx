@@ -5,10 +5,11 @@ import Titulo_card from '../Titulo_card';
 import Titulo_seccion from '../Titulo_seccion';
 import '/src/styles/Contacto.css'
 import Logro from '../Informacion/Logro';
+import { motion } from 'framer-motion';
 
 function Contacto() {
     return (
-        <section className=' seccion ' id='contacto'>
+        <motion.section className=' seccion ' id='contacto' initial={{ opacity: 0, y: 100 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 1 }} viewport={{ once: true, amount: 1 }} >
             <div className="contenido contacto">
                 <Titulo_seccion titulo='Contacto' colorMarcador='color_orange' />
                 <div className='contenedor '>
@@ -27,7 +28,7 @@ function Contacto() {
                     </div>
                 </div>
             </div>
-        </section>
+        </motion.section>
     );
 }
 

@@ -7,17 +7,11 @@ import Descripcion from './Descripcion';
 import '/src/styles/Proyectos/Proyectos.css'
 import '/src/styles/Proyectos/Descripcion.css'
 import { motion } from "framer-motion";
+
 function Proyectos() {
     const [proyectoActivo, setProyectoActivo] = useState("Portafolio pixel");
     return (
-        <motion.section
-            className='seccion'
-            id='proyectos'
-            initial={{ opacity: 0.7 }}
-            whileInView={{ opacity: 1 }}
-            transition={{ duration: 2, repeat: Infinity, repeatType: 'loop' }}
-            viewport={{ once: true }}
-        >
+        <motion.section className='seccion' id='proyectos' initial={{ opacity: 0, y: 100 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 1 }} viewport={{ once: true, amount: 1 }} >
             <div className="contenido proyectos">
                 <Titulo_seccion titulo='Proyectos' colorMarcador='color_cyan' />
 

@@ -24,7 +24,7 @@ function App() {
       )}
 
       {start && (
-        <div className="fadeIn">
+        <div>
 
           <Encabezado />
           <Perfil />

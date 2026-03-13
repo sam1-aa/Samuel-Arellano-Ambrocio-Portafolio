@@ -1,6 +1,7 @@
 
 import '/src/styles/Encabezados.css'
 import { useState } from 'react';
+import { motion } from 'framer-motion';
 function Encabezado() {
     const [active, setActive] = useState('perfil');
     const handleClick = (section) => {
@@ -8,7 +9,12 @@ function Encabezado() {
     }
     const link = ['perfil', 'sobre-mi', 'habilidades', 'proyectos', 'contacto'];
     return (
-        <div className="Encabezado ">
+        <motion.div
+            initial={{ y: -50, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1}}
+            transition={{duration: 1, delay:1}}
+            viewport={{once: true}}
+            className="Encabezado ">
             <h1>&lt;SAA/&gt;</h1>
             <nav className='nav_principal'>
                 <ul>
@@ -21,7 +27,7 @@ function Encabezado() {
                     ))}
                 </ul>
             </nav>
-        </div>
+        </motion.div>
     );
 }
 

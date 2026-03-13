@@ -65,12 +65,17 @@
     border: solid 2px var(--border);
     grid-column: 1 /-1;
     background-color: var(--secondary);
+    overflow: hidden;
 }
 
 
 
 .dato .progreso {
     height: 1.5rem;
+    background-image:
+    linear-gradient(var(--muted) 1px, transparent 1px),
+    linear-gradient(90deg, var(--muted) 1px, transparent 1px);
+    background-size: 1rem 1rem;
    
 }
 

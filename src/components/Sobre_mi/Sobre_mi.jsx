@@ -6,27 +6,28 @@ import Dialogo from './Dialogo/Dialogo';
 import '/src/styles/Sobre.css'
 import Estadisticas from './Estadisticas/Estadisticas';
 import Generales from './Generales/Generales';
-
+import { motion, useInView } from 'framer-motion';
+import { useEffect } from 'react';
 
 function Sobre_mi() {
     return (
-        <section className=' seccion ' id='sobre-mi' >
+        <motion.section className=' seccion ' id='sobre-mi' initial={{ opacity: 0, y: 100 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 1 }} viewport={{ once: true, amount: 1 }} >
             <div className="contenido sobremi">
                 <Titulo_seccion titulo='Sobre mi' colorMarcador='color_yellow' />
 
                 <div className='contenedor '>
-                    <div className='subcontenedor' style={{width: '100%'}}>
+                    <div className='subcontenedor' style={{ width: '100%' }}>
                         <Titulo_card titulo='Dialogo' titulo_after='// Npc: Samuel' pixel_form_color='fondo_primary' />
                         <Dialogo />
                     </div>
-                    <div className='subcontenedor border_orange' style={{width: '100%'}}>
+                    <div className='subcontenedor border_orange' style={{ width: '100%' }}>
                         <Titulo_card titulo='Estadisticas' titulo_after='// RPG' pixel_form_color='fondo_red' />
                         <Estadisticas />
-                        <Generales/>
+                        <Generales />
                     </div>
                 </div>
             </div>
-        </section >
+        </motion.section >
     );
 }
 
