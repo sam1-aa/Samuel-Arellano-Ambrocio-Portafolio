@@ -1,0 +1,113 @@
+.ul_listado {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(4, max-content);
+    list-style: none;
+    border-bottom: solid 3px var(--secondary);
+}
+
+.li_listado {
+    padding: 1rem 1.5rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease-out;
+}
+.li_listado:focus,
+.li_listado:active,
+.li_listado:hover {
+background-color: var(--background);
+}
+
+.icono_activo_habilidades {
+    background-color: var(--primary);
+    pointer-events: none;
+}
+
+.icono_activo_habilidades::before {
+    content: '>';
+    color: var(--background);
+    margin-right: 0.5rem;
+}
+
+.inactivo_habilidades {
+    background-color: var(--card);
+    color: var(--muted-foreground);
+}
+
+
+
+
+.c_items {
+    background-color: var(--background);
+    padding: 2rem;
+}
+
+.ul_item {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+}
+
+.enumeracion_item {
+    color: var(--pixel-yellow);
+}
+
+.li_item {
+    background-color: var(--card);
+    color: var(--secondary-foreground);
+    border: solid 2px var(--border);
+    margin: 0.5rem 0;
+    padding: 1rem;
+    transition: all 0.5s ease-in;
+    cursor: pointer;
+}
+
+.li_item:focus,
+.li_item:active,
+.li_item:hover {
+    background-color: var(--background);
+    color: var(--pixel-yellow);
+    transform: translateY(-4px);
+}
+
+.linea_item {
+    width: 100%;
+    height: 0.3rem;
+    margin-top: 1rem;
+    background-color: var(--background);
+    overflow: hidden;
+}
+
+.linea {
+    background-color: var(--primary);
+    width: 100%;
+    height: 0.3rem;
+    transition: background-color 1s ease-out; 
+}
+
+.li_item:focus .linea,
+.li_item:active.linea,
+.li_item:hover .linea {
+    background-color: var(--pixel-yellow);
+}
+
+.leyenda_habillidades {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+    border-top: 2px solid var(--secondary);
+    padding-top: 1rem;
+}
+
+.total_datos {
+    font-size: 0.7rem;
+    color: var(--muted-foreground);
+}
+
+.total_items {
+    font-size: 0.7rem;
+    color: var(--primary);
+}

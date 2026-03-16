@@ -71,11 +71,11 @@
 
 
 .dato .progreso {
-    height: 1.5rem;
+    height: 1.3rem;
     background-image:
     linear-gradient(var(--muted) 1px, transparent 1px),
     linear-gradient(90deg, var(--muted) 1px, transparent 1px);
-    background-size: 1rem 1rem;
+    background-size: 1rem 0.7rem;
    
 }
 

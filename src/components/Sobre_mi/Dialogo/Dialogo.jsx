@@ -1,4 +1,3 @@
-import { useState } from "react";
 import Comando from "./Comando";
 import Contexto from "./Contexto";
 import Dialogo1 from "./Dialogo1";
@@ -7,15 +6,13 @@ import Dialogo2 from "./Dialogo2";
 function Dialogo() {
     return (
         <div className="sobreMi cargaVertical">
-            <Contexto mensaje='Un viajero se acerca al campamento y encuentra a un joven ingeniero revisando antiguos grimorios de codigo' />
-            <Dialogo2 mensaje='¡Disculpe!, ¿Quien es usted?' />
-            <Dialogo1 mensaje='Saludos, aventurero. Soy un ingeniero en Sistemas Computacioneales, forjado en las tierras de la programacion, ¿En que puedo ayudarle?' />
-            <Dialogo2 mensaje='Madame Shibabawa, advirtio sobre amenazas que comprometen el futuro de nuestro servidor en las proximas semanas' />
-            <Dialogo2 mensaje='Pero también habló de un humano capaz de liberarnos de los males que acechan a nuestro gremio de desarrolladores' />
-            <Dialogo2 mensaje='Estoy seguro que eres esa persona, acompáñame para destruir este mal' />
-            <Dialogo1 mensaje='Entiendo, al parecer no disponemos de mucho tiempo, pero tranquilo junto a mi espada Java y mi escudo la lógica, podremos enfretar este mal, necesitamos llegar a desplegar este capitulo y nuestras defensas cuanto antes' />
-            <Contexto mensaje='El destino aún no está escrito... ¿Cuál será el final de esta maravillosa historia? Únete a esta aventura y descubramos juntos lo que nos depara.' />
-            <Comando mensaje='Presione [enter] para continuar...' />
+            <Contexto mensaje='Un viajero encuentra a un ingeniero revisando antiguos códigos junto al fuego del campamento' />
+            <Dialogo2 mensaje='Hola, ¿eres el ingeniero del que todos hablan?' />
+            <Dialogo1 mensaje='Asi es. Protejo nuestro servidor de los males del codigo roto y frameworks obsoletos.' />
+            <Dialogo2 mensaje='Entonces debes ayudarnos, algo oscuro amenaza nuestro sistema.' />
+            <Dialogo1 mensaje='No temas. Con Java, la logica y el poder de Spring defenderemos nuestro servidor.' />
+            <Contexto mensaje='La aventura apenas comienza...' />
+            <Comando mensaje='Presione para continuar...' />
         </div>
     )
 }

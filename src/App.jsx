@@ -17,14 +17,14 @@ function App() {
 
   return (
     <>
-      {!start && (
+      {/* {!start && (
         <>
           <Presentacion onClick={() => { setStart(true) }} />
         </>
       )}
 
       {start && (
-        <div>
+        <div> */}
 
           <Encabezado />
           <Perfil />
@@ -33,8 +33,8 @@ function App() {
           <Proyectos />
           <Contacto />
 
-        </div>
-      )}
+        {/* </div>
+      )} */}
     </>
   );
 }

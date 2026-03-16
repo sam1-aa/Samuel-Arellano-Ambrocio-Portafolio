@@ -6,10 +6,10 @@
 }
 
 .perfil>.imagen {
-    width: 16rem;
-    border: solid 6px var(--primary);
+    width: 13rem;
+    border: solid 4px var(--primary);
     background-color: var(--secondary);
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
 }
 
 

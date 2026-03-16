@@ -30,7 +30,6 @@ function Descripcion({ proyectoActivo }) {
                     </span>
                 ))}
             </div>
-{/* texto='Recompensa:' */}
             <Leyenda leyenda={proyecto.leyenda} color={proyecto.color} />
         </div>
     );
@@ -50,7 +49,7 @@ function Proyectos(proyectoActivo) {
         },
         "Cupontotal": {
             estatus: "Completado",
-            colorEstatus: "color_red",
+            colorEstatus: "color_cyan",
             dificultad: "Dragon",
             descripcion: "Consigue cupones de forma rapida y gratuita en tus tiendas favoritas y disfruta increibles descuentos, ofertas y promociones exclusivas para ahorrar mas (Pagina web).",
             tecnologias: ['Vite', 'Node.js', 'JavaScript', 'Firebase Realtime Database'],
@@ -59,7 +58,7 @@ function Proyectos(proyectoActivo) {
         },
         "Georuta": {
             estatus: "Completado",
-            colorEstatus: "color_red",
+            colorEstatus: "color_cyan",
             dificultad: "Ogro",
             descripcion: "Optimiza tus planes con información en tiempo real: localiza unidades en el mapa, consulta horarios y corridas de la ruta Altepexi–Tehuacan (sitio web y aplicacion movil).",
             tecnologias: ['Android Studio', 'Java', 'Firebase Realtime Database', 'Hostinger', 'Apache Cordova'],
@@ -68,7 +67,7 @@ function Proyectos(proyectoActivo) {
         },
         "Enseña-t": {
             estatus: "Completado",
-            colorEstatus: "color_red",
+            colorEstatus: "color_cyan",
             dificultad: "Lobo",
             descripcion: "Promovemos el aprendizaje del lenguaje de señas mexicano en escuela y hogar mediante actividades inclusivas que fortalecen la comunicacion, empatia y comprension (Aplicacion movil).",
             tecnologias: ['Android Studio', 'Java', 'Firebase Firestore'],

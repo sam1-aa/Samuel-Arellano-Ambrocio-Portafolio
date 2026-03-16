@@ -4,8 +4,8 @@ body {
     linear-gradient(rgba(0, 255, 136, 0.03) 1px, transparent 1px),
     linear-gradient(90deg, rgba(0, 255, 136, 0.03) 1px, transparent 1px); */
   background-image:
-    linear-gradient(rgba(0, 255, 136, 0.04) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(0, 255, 136, 0.04) 1px, transparent 1px);
+    linear-gradient(rgba(0, 255, 136, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 255, 136, 0.05) 1px, transparent 1px);
   background-size: 16px 16px;
   background-color: #0a0a1a;
   width: 100%;
