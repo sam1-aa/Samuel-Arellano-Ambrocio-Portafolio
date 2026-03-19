@@ -12,7 +12,7 @@ function Encabezado() {
         <motion.div
             initial={{ y: -50, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1}}
-            transition={{duration: 1, delay:1}}
+            transition={{duration: 1, delay:1.5}}
             viewport={{once: true}}
             className="Encabezado ">
             <h1>&lt;SAA/&gt;</h1>

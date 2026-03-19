@@ -8,7 +8,7 @@ import { useState } from 'react';
 function Habilidades() {
     const [active, setActive] = useState('Lenguajes');
     return (
-        <motion.section className='seccion' id='habilidades' initial={{ opacity: 0, y: 100 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 1 }} viewport={{ once: true, amount: 1 }} >
+        <motion.section className='seccion' id='habilidades' initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 1 }} viewport={{ once: true, amount: 0.7 }} >
             <div className="contenido habilidades">
                 <Titulo_seccion titulo='Skills & Habilidades' colorMarcador='color_red' />
                 <div className='contenedor '>

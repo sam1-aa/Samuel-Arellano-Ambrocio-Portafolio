@@ -5,7 +5,7 @@ import Estadisticas from './Estadisticas/Estadisticas';
 
 function Perfil() {
   return (
-    <motion.section className='seccion' id='perfil' initial={{ opacity: 0, y: 100 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 2 }} viewport={{ once: true, amount: 1 }}>
+    <motion.section className='seccion' id='perfil' initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 2 }} viewport={{ once: true, amount: 0.7 }}>
       <div className="perfil">
         <Imagen />
         <Estadisticas campo='Hp' puntuacion='1000' multiplicador='1' color='color_red' fondo='fondo_red' />

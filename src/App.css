@@ -37,7 +37,7 @@
   font-size: 0.8rem;
   font-family: 'Press Start 2P', cursive;
   text-transform: uppercase;
-  /* scrollbar-width: none; */
+  scrollbar-width: none;
 }
 
 .seccion {

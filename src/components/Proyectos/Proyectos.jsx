@@ -11,7 +11,7 @@ import { motion } from "framer-motion";
 function Proyectos() {
     const [proyectoActivo, setProyectoActivo] = useState("Portafolio pixel");
     return (
-        <motion.section className='seccion' id='proyectos' initial={{ opacity: 0, y: 100 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 1 }} viewport={{ once: true, amount: 1 }} >
+        <motion.section className='seccion' id='proyectos' initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 1 }} viewport={{ once: true, amount: 0.7 }} >
             <div className="contenido proyectos">
                 <Titulo_seccion titulo='Proyectos' colorMarcador='color_cyan' />
 

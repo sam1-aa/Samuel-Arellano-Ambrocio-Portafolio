@@ -11,7 +11,7 @@ import { useEffect } from 'react';
 
 function Sobre_mi() {
     return (
-        <motion.section className=' seccion ' id='sobre-mi' initial={{ opacity: 0, y: 100 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 1 }} viewport={{ once: true, amount: 1 }}>
+        <motion.section className=' seccion ' id='sobre-mi' initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 1 }} viewport={{ once: true, amount: 0.7 }}>
             <div className="contenido sobremi">
                 <Titulo_seccion titulo='Sobre mi' colorMarcador='color_yellow' />
 
