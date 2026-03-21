@@ -25,8 +25,22 @@
 
 
 
+.border_yellow {
+    border: solid 4px var(--pixel-yellow);
+}
 .border_orange {
     border: solid 4px var(--pixel-orange);
+}
+
+.border_primary {
+    border: solid 4px var(--primary);
+}
+
+.border_red {
+    border: solid 4px var(--pixel-red);
+}
+.border_cyan {
+    border: solid 4px var(--pixel-cyan);
 }
 
 

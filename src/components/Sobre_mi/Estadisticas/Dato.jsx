@@ -12,7 +12,7 @@ function Dato({ valor, puntuacion, fondo }) {
                     style={{ width: `${puntuacion}%` }}
                     initial={{ x: "-50%", opacity: 0 }}
                     whileInView={{ x: "-0%", opacity: 1 }}
-                    transition={{ duration: 2 }}
+                    transition={{ duration: 2, delay:1 }}
                     viewport={{ once: true, amount: 0.3 }}
                     className={`progreso ${fondo}`}
                 ></motion.div>

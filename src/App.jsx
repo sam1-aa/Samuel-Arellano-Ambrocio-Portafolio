@@ -14,7 +14,7 @@ import Pie from "./components/Pie/Pie";
 
 function App() {
   return (
-    <>
+    < div className="scanlines crt-flicker">
     <Particulas/>
       <Encabezado />
       <Perfil />
@@ -23,7 +23,7 @@ function App() {
       <Proyectos />
       <Contacto />
       <Pie/>
-    </>
+    </div>
   );
 }
 

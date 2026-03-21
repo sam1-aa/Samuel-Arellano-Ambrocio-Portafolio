@@ -19,7 +19,7 @@ function Descripcion({ proyectoActivo }) {
             <hr />
             <p className="area_descripcion">{proyecto.descripcion}</p>
             <div className="area_dificultad">
-                <span>Nivel de amenaza: </span>
+                <span>Nivel de dificultad: </span>
                 <span className={proyecto.color}>{proyecto.dificultad}</span>
             </div>
             <p className="area_titulo_tecnologias">Equipo //tech stack:</p>
@@ -40,17 +40,17 @@ function Proyectos(proyectoActivo) {
     const proyectos = {
         "Portafolio pixel": {
             estatus: "Activo",
-            colorEstatus: "color_primary",
-            dificultad: "Demonio",
+            colorEstatus: "color_red",
+            dificultad: "Intermedio",
             descripcion: "Desplazate por un portafolio web con una temática retro, simple y divertida, donde la creatividad, el diseño y la pasion se combinan para crear ideas unicas (Pagina web).",
             tecnologias: ['Vite', 'Node.js', 'React', 'Vercel', 'JavaScript', 'Stripe', 'Facebook api login', 'Google OAuth 2.0'],
             leyenda: "+2150 exp // +100 gold",
-            color: "color_orange"
+            color: "color_yellow"
         },
         "Cupontotal": {
             estatus: "Completado",
-            colorEstatus: "color_cyan",
-            dificultad: "Dragon",
+            colorEstatus: "color_primary",
+            dificultad: "Alto",
             descripcion: "Consigue cupones de forma rapida y gratuita en tus tiendas favoritas y disfruta increibles descuentos, ofertas y promociones exclusivas para ahorrar mas (Pagina web).",
             tecnologias: ['Vite', 'Node.js', 'JavaScript', 'Firebase Realtime Database'],
             leyenda: "+3600 exp // +100 diamond",
@@ -58,8 +58,8 @@ function Proyectos(proyectoActivo) {
         },
         "Georuta": {
             estatus: "Completado",
-            colorEstatus: "color_cyan",
-            dificultad: "Ogro",
+            colorEstatus: "color_primary",
+            dificultad: "Alto",
             descripcion: "Optimiza tus planes con información en tiempo real: localiza unidades en el mapa, consulta horarios y corridas de la ruta Altepexi–Tehuacan (sitio web y aplicacion movil).",
             tecnologias: ['Android Studio', 'Java', 'Firebase Realtime Database', 'Hostinger', 'Apache Cordova'],
             leyenda: "+1250 exp // +100 silver",
@@ -67,8 +67,8 @@ function Proyectos(proyectoActivo) {
         },
         "Enseña-t": {
             estatus: "Completado",
-            colorEstatus: "color_cyan",
-            dificultad: "Lobo",
+            colorEstatus: "color_primary",
+            dificultad: "Bajo",
             descripcion: "Promovemos el aprendizaje del lenguaje de señas mexicano en escuela y hogar mediante actividades inclusivas que fortalecen la comunicacion, empatia y comprension (Aplicacion movil).",
             tecnologias: ['Android Studio', 'Java', 'Firebase Firestore'],
             leyenda: "+1000 exp // +100 bronze",

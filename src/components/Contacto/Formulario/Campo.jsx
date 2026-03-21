@@ -1,13 +1,13 @@
-function Campo({ label, type = "text", placeholder, id, textarea = false }) {
+function Campo({ type = "text", placeholder, id, textarea = false }) {
     return (
         <>
-            <label htmlFor={id}>{label}</label>
+            <label htmlFor={id}>{id}:</label>
 
             {textarea ?
                 (
-                    <textarea id={id} rows="5" placeholder={placeholder} required></textarea>
+                    <textarea name={id} id={id} rows="5" placeholder={placeholder} required></textarea>
                 ) : (
-                    <input id={id} type={type} placeholder={placeholder} required />
+                    <input name={id} id={id} type={type} placeholder={placeholder} required />
                 )}
         </>
     );
