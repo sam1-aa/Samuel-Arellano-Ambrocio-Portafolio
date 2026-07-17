@@ -6,13 +6,12 @@ import Dialogo2 from "./Dialogo2";
 function Dialogo() {
     return (
         <div className="sobreMi cargaVertical">
-            <Contexto mensaje='Un viajero encuentra a un ingeniero revisando antiguos códigos junto al fuego del campamento' />
-            <Dialogo2 mensaje='Hola, ¿eres el ingeniero del que todos hablan?' />
-            <Dialogo1 mensaje='Asi es. Protejo nuestro servidor de los males del codigo roto y frameworks obsoletos.' />
-            <Dialogo2 mensaje='Entonces debes ayudarnos, algo oscuro amenaza nuestro sistema.' />
-            <Dialogo1 mensaje='No temas. Con Java, la logica y el poder de Spring defenderemos nuestro servidor.' />
-            <Contexto mensaje='La aventura apenas comienza...' />
-            <Comando mensaje='Presione para continuar...' />
+            <Dialogo1 mensaje=' Hola, soy Samuel Arellano Ambrocio.' />
+            <Dialogo1 mensaje=' Desarrollador backend con experiencia en Java y Spring Boot.' />
+            <Dialogo1 mensaje=' Mi objetivo es participar en la creación y mantenimiento de aplicaciones que aporten valor y mejoren la experiencia del usuario en situaciones reales.' />
+            <Dialogo1 mensaje=' Si has llegado hasta aquí te invito a explorar mis proyectos y las tecnologías con las que trabajo.' />
+            <Contexto mensaje=' Misión disponible: Explorar Tecnologías'/>
+            <Comando mensaje=' Presione para continuar...' />
         </div>
     )
 }

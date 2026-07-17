@@ -13,7 +13,7 @@ function Perfil() {
         <Estadisticas campo='Exp' puntuacion='9600' multiplicador='10' color='color_yellow' fondo='fondo_yellow' />
 
         <h2 className='nombre'>Samuel Arellano</h2>
-        <p>lvl 25 // class: Desarrollador backend</p>
+        <p>Nivel 25 // clase: Desarrollador backend</p>
         <h3 className='titulacion'>Ingeniero en sistemas computacionales<span className='cursorActivo cursorParpadeante'></span></h3>
         <div className='perfil_acciones'>
           <a className='sombra_solida' onClick={() => { document.querySelector('.proyectos').scrollIntoView({ behavior: 'smooth' }) }}>Ver proyectos</a>

@@ -42,7 +42,7 @@ function Proyectos(proyectoActivo) {
             estatus: "Activo",
             colorEstatus: "color_red",
             dificultad: "Intermedio",
-            descripcion: "Desplazate por un portafolio web con una temática retro, simple y divertida, donde la creatividad, el diseño y la pasion se combinan para crear ideas unicas (Pagina web).",
+            descripcion: "Explora un portafolio web con una temática retro, simple y divertida, donde la creatividad, el diseño y la pasión se unen para dar vida a ideas únicas. (Página web).",
             tecnologias: ['Vite', 'Node.js', 'React', 'Vercel', 'JavaScript', 'Stripe', 'Facebook api login', 'Google OAuth 2.0'],
             leyenda: "+2150 exp // +100 gold",
             color: "color_yellow"
@@ -51,7 +51,7 @@ function Proyectos(proyectoActivo) {
             estatus: "Completado",
             colorEstatus: "color_primary",
             dificultad: "Alto",
-            descripcion: "Consigue cupones de forma rapida y gratuita en tus tiendas favoritas y disfruta increibles descuentos, ofertas y promociones exclusivas para ahorrar mas (Pagina web).",
+            descripcion: "Obtén cupones gratis de forma rápida para tus tiendas favoritas y aprovecha descuentos, ofertas y promociones exclusivas para ahorrar más. (Página web).",
             tecnologias: ['Vite', 'Node.js', 'JavaScript', 'Firebase Realtime Database'],
             leyenda: "+3600 exp // +100 diamond",
             color: "color_red"
@@ -60,7 +60,7 @@ function Proyectos(proyectoActivo) {
             estatus: "Completado",
             colorEstatus: "color_primary",
             dificultad: "Alto",
-            descripcion: "Optimiza tus planes con información en tiempo real: localiza unidades en el mapa, consulta horarios y corridas de la ruta Altepexi–Tehuacan (sitio web y aplicacion movil).",
+            descripcion: "Planifica tus viajes con información en tiempo real. Localiza unidades en el mapa y consulta horarios y corridas de la ruta Altepexi–Tehuacán. (Sitio web y aplicación móvil).",
             tecnologias: ['Android Studio', 'Java', 'Firebase Realtime Database', 'Hostinger', 'Apache Cordova'],
             leyenda: "+1250 exp // +100 silver",
             color: "color_yellow"
@@ -69,7 +69,7 @@ function Proyectos(proyectoActivo) {
             estatus: "Completado",
             colorEstatus: "color_primary",
             dificultad: "Bajo",
-            descripcion: "Promovemos el aprendizaje del lenguaje de señas mexicano en escuela y hogar mediante actividades inclusivas que fortalecen la comunicacion, empatia y comprension (Aplicacion movil).",
+            descripcion: "Promovemos el aprendizaje de la Lengua de Señas Mexicana en la escuela y el hogar mediante actividades inclusivas que fortalecen la comunicación, la empatía y la comprensión. (Aplicación móvil).",
             tecnologias: ['Android Studio', 'Java', 'Firebase Firestore'],
             leyenda: "+1000 exp // +100 bronze",
             color: "color_cyan"

@@ -1,7 +1,7 @@
 function Contexto({mensaje}) {
     return (
         <>
-        <p className="contexto">/* {mensaje}\ *</p>
+        <p className="contexto">/* {mensaje} \*</p>
         </>
     )
 }

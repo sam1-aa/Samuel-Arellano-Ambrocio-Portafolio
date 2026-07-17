@@ -4,8 +4,8 @@ function Items({ active }) {
     const datos = {
         'Lenguajes': ['Java', 'JavaScript'],
         'Frameworks': ['React', 'Node.js', 'Spring boot'],
-        'Base-de-datos': ['MySQL', 'MongoDB', 'Google Realtime database', 'Json'],
-        'Herraminetas': ['Git', 'Android Studio', 'Vite', 'Postman']
+        'Base-de-datos': ['MySQL', 'Google Realtime database'],
+        'Herraminetas': ['Git', 'Vite', 'Postman', 'Laragon']
     };
 
     let total_items = datos[active].length;

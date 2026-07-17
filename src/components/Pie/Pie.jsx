@@ -6,7 +6,7 @@ function Pie() {
             <motion.div className="seccion  Pie" initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 1 }} viewport={{ once: true, amount: 0.7 }} >
                 <div className='contenedor Pie_contenedor'>
                     <img className='Pie_img' src="/images/logo.png" alt="" />
-                    <p>Hecho con &lt;3 en un agradable momento</p>
+                    <p>Diseñado y desarrollado con &lt;3</p>
                     <div>
                         <p>© 2026 Samuel Arellano Ambrocio</p>
                         <p>Todos los derechos reservados</p>

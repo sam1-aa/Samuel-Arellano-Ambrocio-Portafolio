@@ -16,9 +16,9 @@ function Form() {
     }
     return (
         <form ref={form} onSubmit={sendEmail}>
-            <Campo type='text' placeholder='tu nombre...' id='nombre' input />
-            <Campo type='email' placeholder='tu correo...' id='correo' input />
-            <Campo type='text' placeholder='tu mensaje...' id='mensaje' textarea />
+            <Campo type='text' placeholder='nombre completo' id='nombre' input />
+            <Campo type='email' placeholder='correo electrónico' id='correo' input />
+            <Campo type='text' placeholder='Ingrese su mensaje' id='mensaje' textarea />
             <button type='submit'>Enviar mensaje [enter]</button>
         </form>
 
