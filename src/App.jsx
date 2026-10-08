@@ -17,12 +17,12 @@ function App() {
     < div className="scanlines crt-flicker">
     <Particulas/>
       <Encabezado />
-      <Perfil />
+       <Perfil /> 
       <Sobre_mi />
       <Habilidades />
       <Proyectos />
       <Contacto />
-      <Pie/>
+      <Pie/> 
     </div>
   );
 }
